@@ -49,7 +49,7 @@ p {
 
 .scrollable-content {
     position: absolute;
-    top: 80px; /* Adjust this value based on your header height */
+    top: 80px; 
     left: 0;
     right: 0;
     bottom: 0;
@@ -58,7 +58,7 @@ p {
 
 .content-wrapper {
     min-height: 100%;
-    padding-top: 20px; /* Add some top padding to prevent content from being hidden behind the header */
+    padding-top: 20px; 
 }
 
 .content-space {
@@ -79,4 +79,8 @@ a {
 a:hover {
     color: #7e4acd;
     transition: none;
+}
+
+#no-style {
+    background-color: rgb(82, 82, 82);
 }

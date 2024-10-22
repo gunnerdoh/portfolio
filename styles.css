@@ -15,18 +15,7 @@ header {
     z-index: 2;
 }
 
-h1 {
-    font-family: "Nabla", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "EDPT" 100,
-        "EHLT" 12;
-    color: antiquewhite;
-}
-
-nav p {
+nav p, h1 {
     color: antiquewhite;
 }
 

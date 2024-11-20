@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background-warm': '#F1EEEA', // Use any hex code
+        'original-stone': '#fdfcf6', // Use any hex code
         'brand': {
           100: '#E6F6FF',
           500: '#3B82F6',
@@ -14,7 +14,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        'averia': ['"Averia Serif Libre"', 'serif']
+        'averia': ['"Averia Serif Libre"', 'serif'],
+        'raleway': ["Raleway", "sans-serif"]
       }
 
     },

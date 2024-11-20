@@ -19,9 +19,9 @@ function Shape() {
         // cube
         const geometry = new THREE.BoxGeometry(1, 1, 1);
         const materials = [
-            new THREE.MeshBasicMaterial({ color: 0xff0000 }), // right
-            new THREE.MeshBasicMaterial({ color: 0x00ff00 }), // left
-            new THREE.MeshBasicMaterial({ color: 0x0000ff }), // top
+            new THREE.MeshBasicMaterial({ color: 0x4254f5 }), // right
+            new THREE.MeshBasicMaterial({ color: 0x30d166 }), // left
+            new THREE.MeshBasicMaterial({ color: 0x3d1b00 }), // top
             new THREE.MeshBasicMaterial({ color: 0xffff00 }), // bottom
             new THREE.MeshBasicMaterial({ color: 0xff00ff }), // front
             new THREE.MeshBasicMaterial({ color: 0x00ffff }), // back
@@ -64,7 +64,7 @@ function Shape() {
         };
     }, []);
 
-    return <div ref={mountRef} className="w-full h-full" />;
+    return <div ref={mountRef} className="w-40 h-40" />;
 }
 
 export default Shape;

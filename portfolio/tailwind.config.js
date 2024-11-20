@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  
   theme: {
     extend: {
       colors: {
@@ -16,10 +17,11 @@ module.exports = {
       fontFamily: {
         'averia': ['"Averia Serif Libre"', 'serif'],
         'raleway': ["Raleway", "sans-serif"]
-      }
+      },
 
     },
   },
   plugins: [],
 }
+
 

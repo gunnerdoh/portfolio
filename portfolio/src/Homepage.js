@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Mountain from './components/mountain';
 import Pageload from './components/Pageload';
 import Contact from './components/Contact';
+import { X } from 'lucide-react';
 
 function Homepage() {
     const [isWorkVisible, setIsWorkVisible] = useState(false);
@@ -10,6 +11,15 @@ function Homepage() {
     const [isElseBold, setIsElseBold] = useState(false);
     const [isAboutVisible, setIsAboutVisible] = useState(false);
     const [isAboutBold, setIsAboutBold] = useState(false);
+
+    const CloseButton = ({ onClick }) => (
+        <button
+            onClick={onClick}
+            className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
+        >
+            <X className="text-gray-600 hover:text-gray-900" size={24} />
+        </button>
+    );
 
     const handleWorkClick = () => {
         setIsWorkVisible(!isWorkVisible);
@@ -91,6 +101,7 @@ function Homepage() {
                         <div className="hidden md:block">
                             <Mountain />
                         </div>
+                        <div><p className="text-raleway text-gray-300">v. 2.0</p></div>
                     </div>
                 </div>
 
@@ -104,6 +115,10 @@ function Homepage() {
                     <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">
                         About
                     </h2>
+                    <CloseButton onClick={() => {
+                        setIsAboutVisible(false);
+                        setIsAboutBold(false);
+                    }} />
                     <div className="flex flex-col md:flex-row">
                         <div className="w-full md:w-2/3">
                             <p className="mb-5">
@@ -132,6 +147,10 @@ function Homepage() {
                     <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">
                         Work + Projects
                     </h2>
+                    <CloseButton onClick={() => {
+                        setIsAboutVisible(false);
+                        setIsAboutBold(false);
+                    }} />
                     <div className="flex flex-col md:flex-row">
                         <div className="w-full md:w-2/3">
                             <h3 className="mb-5 text-xl">2024</h3>

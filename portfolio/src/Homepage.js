@@ -148,8 +148,8 @@ function Homepage() {
                         Work + Projects
                     </h2>
                     <CloseButton onClick={() => {
-                        setIsAboutVisible(false);
-                        setIsAboutBold(false);
+                        setIsWorkVisible(false);
+                        setIsWorkBold(false);
                     }} />
                     <div className="flex flex-col md:flex-row">
                         <div className="w-full md:w-2/3">

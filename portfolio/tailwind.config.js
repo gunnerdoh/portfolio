@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'original-stone': '#fdfcf6', // Use any hex code
+        'original-stone': '#fdfcf6',
         'brand': {
           100: '#E6F6FF',
           500: '#3B82F6',

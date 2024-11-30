@@ -24,34 +24,16 @@ function Homepage() {
     const handleWorkClick = () => {
         setIsWorkVisible(!isWorkVisible);
         setIsWorkBold(!isWorkBold);
-        
-        // setIsElseVisible(false);
-        // setIsElseBold(false);
-
-        // setIsAboutVisible(false);
-        // setIsAboutBold(false);
     };
 
     const handleElseClick = () => {
         setIsElseVisible(!isElseVisible);
         setIsElseBold(!isElseBold);
-
-        // setIsAboutVisible(false);
-        // setIsAboutBold(false);
-
-        // setIsWorkVisible(false);
-        // setIsWorkBold(false);
     };
 
     const handleAboutClick = () => {
         setIsAboutVisible(!isAboutVisible);
         setIsAboutBold(!isAboutBold);
-
-        // setIsElseVisible(false);
-        // setIsElseBold(false);
-
-        // setIsWorkVisible(false);
-        // setIsWorkBold(false);
     };
 
     return (

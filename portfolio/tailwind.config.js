@@ -16,8 +16,8 @@ module.exports = {
         'linkedin-blue': '#0077B5'
       },
       fontFamily: {
-        'averia': ['"Averia Serif Libre"', 'serif'],
-        'raleway': ["Raleway", "sans-serif"]
+        'primary': ['Rubik', 'serif'],
+        'secondary': ['Raleway', 'sans-serif']
       },
 
     },

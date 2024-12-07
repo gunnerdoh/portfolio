@@ -15,7 +15,7 @@ function Mountain() {
         scene.background = null;
         
         // Reduced camera settings
-        const camera = new THREE.PerspectiveCamera(45, 400/400, 1, 100); // Reduced far plane
+        const camera = new THREE.PerspectiveCamera(40, 400/400, 1, 100); // Reduced far plane
         camera.position.set(40, 40, 40); // Reduced distance
         camera.lookAt(0, 0, 0);
         
@@ -25,7 +25,7 @@ function Mountain() {
             powerPreference: "low-power" // Prefer lower power usage
         });
         renderer.setClearColor(0x000000, 0);
-        renderer.setSize(250, 250); // Fixed size
+        renderer.setSize(320, 320); // Fixed size
         currentRef.appendChild(renderer.domElement);
 
         // Simplified lighting

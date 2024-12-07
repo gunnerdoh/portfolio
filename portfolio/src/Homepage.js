@@ -7,8 +7,6 @@ import { X } from 'lucide-react';
 function Homepage() {
     const [isWorkVisible, setIsWorkVisible] = useState(false);
     const [isWorkBold, setIsWorkBold] = useState(false);
-    const [isElseVisible, setIsElseVisible] = useState(false);
-    const [isElseBold, setIsElseBold] = useState(false);
     const [isAboutVisible, setIsAboutVisible] = useState(false);
     const [isAboutBold, setIsAboutBold] = useState(false);
 
@@ -26,11 +24,6 @@ function Homepage() {
         setIsWorkBold(!isWorkBold);
     };
 
-    const handleElseClick = () => {
-        setIsElseVisible(!isElseVisible);
-        setIsElseBold(!isElseBold);
-    };
-
     const handleAboutClick = () => {
         setIsAboutVisible(!isAboutVisible);
         setIsAboutBold(!isAboutBold);
@@ -43,10 +36,10 @@ function Homepage() {
                 {/* Header Section */}
                 <div className='flex flex-col md:flex-row justify-between mb-5 space-y-4 md:space-y-0'>
                     <div>
-                        <h2 className="font-averia underline underline-offset-2 text-xl md:text-2xl font-bold text-black text-center md:text-left">
+                        <h2 className="font-primary text-xl underline underline-offset-2 md:text-2xl font-bold text-black text-center md:text-left">
                             Gunner Dohrenwend
                         </h2>
-                        <p className="font-averia text-base md:text-l font-light text-black text-center md:text-left">
+                        <p className="font-primary text-base md:text-l font-light text-black text-center md:text-left">
                             gunnerdoh@gmail.com
                         </p>
                     </div>
@@ -60,21 +53,21 @@ function Homepage() {
                     <div className="flex flex-col align-left w-full md:w-1/2 space-y-4 md:space-y-0">
                         <h2 
                             onClick={handleAboutClick}
-                            className={`font-raleway text-xl md:text-2xl text-black cursor-pointer hover:text-gray-700 transition-all text-center md:text-left
+                            className={`font-secondary text-xl md:text-2xl text-black cursor-pointer hover:text-gray-700 transition-all text-center md:text-left
                                 ${isAboutBold ? 'font-bold' : 'font-light'}`}
                         >
                             ABOUT
                         </h2>
                         <h2 
                             onClick={handleWorkClick}
-                            className={`font-raleway text-xl md:text-2xl text-black cursor-pointer hover:text-gray-700 transition-all text-center md:text-left
+                            className={`font-secondary text-xl md:text-2xl text-black cursor-pointer hover:text-gray-700 transition-all text-center md:text-left
                                 ${isWorkBold ? 'font-bold' : 'font-light'}`}
                         >
                             WORK + PROJECTS
                         </h2>
                         <a 
                             href="./resume.pdf" 
-                            className="font-raleway text-xl md:text-2xl font-light text-black text-center md:text-left" 
+                            className="font-secondary text-xl md:text-2xl font-light text-black text-center md:text-left" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
@@ -91,7 +84,7 @@ function Homepage() {
                 <div className={`
                     fixed top-0 right-0 h-full w-full md:w-[61rem] shadow-lg p-4 md:p-8
                     bg-gray-200 border-l-2 border-black overflow-y-auto
-                    font-averia transform transition-all duration-500 ease-in-out
+                    font-primary transform transition-all duration-500 ease-in-out
                     ${isAboutVisible ? 'translate-x-0' : 'translate-x-full'}
                 `}>
                     <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">
@@ -123,7 +116,7 @@ function Homepage() {
                 <div className={`
                     fixed top-0 right-0 h-full w-full md:w-[60rem] shadow-lg p-4 md:p-8
                     bg-white border-l-2 border-black overflow-y-auto
-                    font-averia transform transition-all duration-500 ease-in-out
+                    font-primary transform transition-all duration-500 ease-in-out
                     ${isWorkVisible ? 'translate-x-0' : 'translate-x-full'}
                 `}>
                     <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">

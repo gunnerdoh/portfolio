@@ -10,7 +10,7 @@ function Pageload() {
     }, []);
 
     return (
-        <div className="font-raleway text-end pt-1 pe-1">
+        <div className="font-primary text-end pt-1 pe-1">
             {loadString}
         </div>
     );

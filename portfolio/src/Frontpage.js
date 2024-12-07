@@ -63,7 +63,7 @@ function Frontpage() {
                         {/* Right Image Column */}
                         <div className="md:w-1/3 flex justify-center">
                             <img 
-                                className="w-full max-w-[320px] object-cover rounded" 
+                                className="max-w-[320px] w-full h-auto rounded object-contain" 
                                 src="/img/IMG_0234.jpg" 
                                 alt="Profile"
                             />

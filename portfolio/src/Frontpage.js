@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Contact from './components/Contact';
 import Mountain from './components/mountain';
 import Directory from './components/Directory';
-import Projects from './Projects';
 
 function Frontpage() {
     return (
@@ -64,7 +63,7 @@ function Frontpage() {
                         {/* Right Image Column */}
                         <div className="md:w-1/3 flex justify-center">
                             <img 
-                                className="w-full max-w-[320px] h-auto object-cover rounded" 
+                                className="w-full max-w-[320px] object-cover rounded" 
                                 src="/img/IMG_0234.jpg" 
                                 alt="Profile"
                             />

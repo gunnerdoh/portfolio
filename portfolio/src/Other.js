@@ -8,7 +8,7 @@ function Other() {
                 <li>
                     <a 
                     href="https://gunnerdoh.bearblog.dev/blog/" 
-                    className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
+                    className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
                     Writing ->
@@ -17,7 +17,7 @@ function Other() {
                 <ul>
                     <a 
                     href="https://www.youtube.com/watch?v=HS9Buft_WVg&ab_channel=GunnerDohrenwend" 
-                    className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
+                    className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
                     "The Weight" Cover ->
@@ -26,7 +26,7 @@ function Other() {
                 <li>
                     <a 
                     href="/old" 
-                    className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
+                    className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
                     Old Portfolio ->

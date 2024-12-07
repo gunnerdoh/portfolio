@@ -1,34 +1,25 @@
-import { useState } from 'react';
+import React from 'react';
 
-const SlidingComponent = () => {
-  const [isVisible, setIsVisible] = useState(false);
+function Work() {
+    return (
+        <div>
+            <h2 className="text-3xl font-bold mb-3">Work</h2>
+            <ul>
+                <li className="mb-5">
+                    <p className="text-xl text-gray-600 font-bold font-italic">Axiom Health, Software Engineering Intern</p>
+                    <p>June 2023 - September 2023</p>
+                </li>
+                <li className="mb-5">
+                    <p className="text-xl text-gray-600 font-bold font-italic">Computer Science Instructor, Coding For Youth</p>
+                    <p>September 2022 - December 2022</p>
+                </li>
+                <li className="mb-5">
+                    <p className="text-xl text-gray-600 font-bold font-italic">Research Student, UW iSchool - Addis Ababa, Ethiopia</p>
+                    <p>July 2022 - Septmeber 2022</p>
+                </li>
+            </ul>
+        </div>
+    )
+}
 
-  return (
-    <div className="p-8">
-      <button
-        onClick={() => setIsVisible(!isVisible)}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors duration-200"
-      >
-        {isVisible ? 'Hide Content' : 'Show Content'}
-      </button>
-      
-      <div
-        className={`
-          mt-4 p-6 bg-white shadow-lg rounded-lg
-          transform transition-all duration-500 ease-in-out
-          ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}
-        `}
-      >
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          Hello there! 👋
-        </h2>
-        <p className="text-gray-600">
-          This content slides in from the left when the button is clicked.
-          Click the button again to make it slide away!
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default SlidingComponent;
+export default Work;

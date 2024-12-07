@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Projects from '../Projects';
 import Other from '../Other';
+import Work from '../Work';
 
 const Directory = () => {
     const [activeTab, setActiveTab] = useState('Projects');
@@ -31,6 +32,7 @@ const Directory = () => {
             <div>
             {activeTab === 'Projects' && <Projects />}
             {activeTab === 'Other' && <Other />}
+            {activeTab === 'Work' && <Work />}
             </div>
         </div>
     </>

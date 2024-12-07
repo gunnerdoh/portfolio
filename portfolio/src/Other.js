@@ -3,34 +3,35 @@ import React from 'react';
 function Other() {
     return (
         <>
-            <ul>
+            <h2 className="text-2xl font-bold">Other</h2>
+            <ul className="list-inside">
                 <li>
                     <a 
                     href="https://gunnerdoh.bearblog.dev/blog/" 
                     className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    Writings ->
+                    Writing ->
                     </a>       
                 </li>
                 <ul>
                     <a 
-                    href="https://soundcloud.com/glasstrees1" 
+                    href="https://www.youtube.com/watch?v=HS9Buft_WVg&ab_channel=GunnerDohrenwend" 
                     className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    Portfolio, v2.0
+                    "The Weight" Cover ->
                     </a>       
                 </ul>
-                <ul>
+                <li>
                     <a 
-                    href="https://soundcloud.com/glasstrees1" 
+                    href="/old" 
                     className="text-blue-600 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    Portfolio, v1.0
+                    Old Portfolio ->
                     </a>       
-                </ul>
+                </li>
             </ul>
         </>
     )

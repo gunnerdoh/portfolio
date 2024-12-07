@@ -31,7 +31,6 @@ const Directory = () => {
             <div>
             {activeTab === 'Projects' && <Projects />}
             {activeTab === 'Other' && <Other />}
-
             </div>
         </div>
     </>

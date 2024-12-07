@@ -112,7 +112,7 @@ function Mountain() {
         };
     }, []);
 
-    return <div ref={mountRef}/>;
+    return <div className="flex items-center justify-center min-w-screen" ref={mountRef}/>;
 }
 
 export default Mountain;

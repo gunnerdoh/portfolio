@@ -45,6 +45,21 @@ function Frontpage() {
                                 Contact
                             </div>
                             <Contact />
+                            
+                            <div className="mt-4 bg-blue-500 text-white font-bold py-1 px-4 rounded inline-flex w-fit
+                            text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 
+                            focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium text-sm text-center me-2 mb-2">
+                                <a 
+                                href="./resume.pdf" 
+                                className="" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                >
+                                    My Resume
+                                </a> 
+                            </div>
+
+                            <p className="m-1 text-sm text-gray-400">v3.0</p>
                         </div>
                         {/* Right Image Column */}
                         <div className="md:w-1/3 flex justify-center">
@@ -58,6 +73,7 @@ function Frontpage() {
                 </div>
                 <Directory />
             </div>
+                <Mountain />                    
         </div>
     );
 }

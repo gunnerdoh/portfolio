@@ -6,9 +6,11 @@ function Projects() {
             <h2 className="text-3xl font-bold mb-3">Projects</h2>
             <ul>
                 <li className="mb-5">
-                    <p className="text-xl text-gray-600 font-bold font-italic">HuskyswapUW.com</p>
-                    <p>A website designed for UW students to buy and sell goods between each other. Working on making into an app.</p>
-                    <a href="https://huskyswapuw.com" target="_blank"  className="text-blue-500">Link to site</a>
+                    <p className="text-xl text-gray-600 font-bold font-italic">Purple Elections</p>
+                    <p>Election demographics in a new shade, broken down by state and county.</p>
+                    <p>
+                        <a href="https://gunnerdoh.github.io/election-map/" target="_blank"  className="text-blue-500">Link to project</a>
+                    </p>
                 </li>
                 <li className="mb-5">
                     <p className="text-xl text-gray-600 font-bold font-italic">NYC Air Quality and Criminal Analysis</p>

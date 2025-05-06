@@ -11,16 +11,16 @@ function Other() {
                     className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    Writing ->
+                    Blog -{`>`}
                     </a>       
                 </li>
                 <ul>
                     <a 
-                    href="https://www.youtube.com/watch?v=HS9Buft_WVg&ab_channel=GunnerDohrenwend" 
+                    href="https://www.youtube.com/@gunnerdohenwend" 
                     className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    "The Weight" Cover ->
+                    Youtube -{`>`}
                     </a>       
                 </ul>
                 <li>
@@ -29,7 +29,7 @@ function Other() {
                     className="text-blue-700 underline hover:text-blue-800 hover:underline-offset-2 transition-all inline-flex items-center gap-1"
                     target="_blank" rel="noopener"
                     >
-                    Old Portfolio ->
+                    Old Portfolio -{`>`}
                     </a>       
                 </li>
             </ul>

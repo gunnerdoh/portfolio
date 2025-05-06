@@ -6,6 +6,10 @@ function Work() {
             <h2 className="text-3xl font-bold mb-3">Work</h2>
             <ul>
                 <li className="mb-5">
+                    <p className="text-xl text-gray-600 font-bold font-italic">Informatics Tutor, University of Washington</p>
+                    <p>March 2025 -</p>
+                </li>
+                <li className="mb-5">
                     <p className="text-xl text-gray-600 font-bold font-italic">Axiom Health, Software Engineering Intern</p>
                     <p>June 2023 - September 2023</p>
                 </li>

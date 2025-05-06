@@ -18,15 +18,15 @@ function Frontpage() {
                             <div className="mt-4 bg-gray-500 text-white font-bold py-1 px-4 rounded inline-flex w-fit">
                                 About Me
                             </div>
-                            <p className="mt-2 font-primary text-base md:text-xl font-light text-black text-center md:text-left">
+                            <p className="mt-2 font-primary text-base md:text-xl text-black text-center md:text-left">
                                 Informatics @ <span className='underline decoration-purple-700'>University of Washington</span>.
                             </p>
                             <p className="mt-2 font-primary text-base md:text-l font-light text-black text-center md:text-left">
-                                I study mainly programming and data science, but am also interested in machine learning, 
+                                I study mainly programming and project management, but am also interested in data engineering, 
                                 business intelligence, and bioinformatics. 
                             </p>
                             <p className="mt-2 font-primary text-base md:text-l font-light text-black text-center md:text-left">
-                                I'm particularly drawn to projects that combine analysis and design.
+                                I like tech, music, the outdoors, and good design.
                             </p>
                             <div className="mt-4 bg-gray-500 text-white font-bold py-1 px-4 rounded inline-flex w-fit">
                                 Programming

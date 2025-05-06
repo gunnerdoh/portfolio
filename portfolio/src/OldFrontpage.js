@@ -4,7 +4,7 @@ import Pageload from './components/Pageload';
 import Contact from './components/Contact';
 import { X } from 'lucide-react';
 
-function Homepage() {
+function OldFrontpage() {
     const [isWorkVisible, setIsWorkVisible] = useState(false);
     const [isWorkBold, setIsWorkBold] = useState(false);
     const [isAboutVisible, setIsAboutVisible] = useState(false);
@@ -167,4 +167,4 @@ function Homepage() {
     );
 }
 
-export default Homepage;
+export default OldFrontpage;

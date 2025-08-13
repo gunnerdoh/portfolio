@@ -22,10 +22,6 @@ const ContactSection = () => {
             >
                 <Linkedin size={25} />
             </a>
-            <div className="flex align-center my-auto">
-                <Mail size={25} className="pe-2"></Mail>
-                <p className="font-secondary text-l underline decoration-gray-200 select-all">gunnerdoh@gmail.com</p> 
-            </div>
         </div>
     );
 };

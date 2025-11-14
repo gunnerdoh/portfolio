@@ -2,41 +2,49 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div>
-            <h2 className="text-3xl font-bold mb-3">Projects</h2>
-            <ul>
-                <li className="mb-5">
-                    <p className="text-xl text-gray-600 font-bold font-italic">Sleep Visualizations</p>
-                    <p>Visualizing sleep data in a new way. WIP.</p>
-                    <p>
-                        <a href="https://github.com/gunnerdoh/sleep-viz/" target="_blank"  className="text-blue-500">Github</a>
+        <div className="p5">
+            <h2 className="text-3xl font-bold">Projects</h2>
+            {/* Spotify */}
+            <div className="flex flex-row items-start">
+            <div class="relative flex flex-col my-6 me-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+                <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="/img/spotify.jpg" alt="card-image" />
+                </div>
+                <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                        Spotify Treemap
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                        A breakdown of your spotify activity.
                     </p>
-                </li>
-                <li className="mb-5">
-                    <p className="text-xl text-gray-600 font-bold font-italic">Purple Elections</p>
-                    <p>Election demographics in a new shade, broken down by state and county.</p>
-                    <p>
-                        <a href="https://gunnerdoh.github.io/election-map/" target="_blank"  className="text-blue-500">Link to project</a>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                    <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    <a href="https://gunnerdoh.github.io/election-map/" target="_blank"  className="">Link to project</a>
+                    </button>
+                </div>
+            </div>  
+            
+            {/* Election Mapping */}
+            <div class="relative flex flex-col my-6 me-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+                <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                    <img src="/img/election.jpg" alt="card-image" />
+                </div>
+                <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                        Election Mapping
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                        Small project breaking election data down by county and using shades of purple.
                     </p>
-                </li>
-                <li className="mb-5">
-                    <p className="text-xl text-gray-600 font-bold font-italic">NYC Air Quality and Criminal Analysis</p>
-                    <p>
-                        Used R Libraries (ggplot2, shiny, DT, sf, etc) to analyze and visualize correlations between asir quality and criminal activity in NYC. 
-                        This was a group project for INFO 201, a class focusing on R and RStudio. 
-                    </p>
-                    <a href="https://github.com/gunnerdoh/NYC-Air-Quality-and-Criminal-Activity-Analysis" className="text-blue-500">Github</a>
-                </li>
-                <li className="mb-5">
-                    <p className="text-xl text-gray-600 font-bold font-italic">Find Food Seattle</p>
-                    <p>
-                        Proof-of-concept web app to help Seattle residents find free food resources near them, and for users to upload listings of free food
-                        available through legitimate distributors. Another group project, front end written in React and Bootstrap with Firebase storage and 
-                        authentication.  
-                    </p>
-                    <a href="https://github.com/info340c-sp24/project-dr-pepper-code-monkeys" className="text-blue-500">Github</a>
-                </li>
-            </ul>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                    <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    <a href="https://gunnerdoh.github.io/election-map/" target="_blank"  className="">Link to project</a>
+                    </button>
+                </div>
+            </div>  
+        </div>
         </div>
     )
 }

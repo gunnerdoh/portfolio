@@ -20,7 +20,7 @@ function Projects() {
                 </div>
                 <div class="px-4 pb-4 pt-0 mt-2">
                     <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    <a href="https://gunnerdoh.github.io/election-map/" target="_blank"  className="">Link to project</a>
+                    <a href="https://gunnerdoh.github.io/spotify-listening-treemap/" target="_blank"  className="">Link to project</a>
                     </button>
                 </div>
             </div>  

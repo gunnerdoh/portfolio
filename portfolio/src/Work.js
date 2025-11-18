@@ -3,6 +3,7 @@ import React from 'react';
 function Work() {
     return (
         <>
+            <h2 className="text-3xl mt-5 mb-4 flex flex-row justify-center font-bold">Experience</h2>
             {/* AML */}
             <a href="#" class="m-4 flex flex-col items-center bg-gray-200 bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row">
                 <div class="flex items-center justify-center bg-white w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">

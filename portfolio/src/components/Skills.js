@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Skills = () => {
-    const [showLanguages, setShowLanguages] = useState(false);
+    const [showLanguages, setShowLanguages] = useState(true);
 
     return (
         <>

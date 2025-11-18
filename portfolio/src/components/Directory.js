@@ -4,11 +4,11 @@ import Other from '../Other';
 import Work from '../Work';
 
 const Directory = () => {
-    const [activeTab, setActiveTab] = useState('Projects');
+    const [activeTab, setActiveTab] = useState('Work');
 
   return (
     <>
-        <div className="flex flex-col">
+        <div className="flex flex-col px-20">
             <div className="flex flex-row mx-auto items-center space-between pt-8 rounded-lg">
                 <button 
                     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l ${activeTab === 'Projects' ? 'bg-gray-400' : ''}`}
@@ -20,13 +20,13 @@ const Directory = () => {
                     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 ${activeTab === 'Work' ? 'bg-gray-400' : ''}`}
                     onClick={() => setActiveTab('Work')}
                 >
-                    Work
+                    Experience
                 </button>
                 <button 
                     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r ${activeTab === 'Other' ? 'bg-gray-400' : ''}`}
                     onClick={() => setActiveTab('Other')}
                 >
-                    Other
+                    Other / Fun
                 </button>
             </div>
             <div>

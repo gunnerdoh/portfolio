@@ -76,7 +76,7 @@ function Work() {
 
             <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row p-8 md:p-0">
                 <div class="flex items-center justify-center bg-blue-400 w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">
-                    <img class="object-contain max-w-full max-h-full p-4" src="/img/work/ImG_3839.png" alt=""></img>
+                    <img class="object-contain max-w-full max-h-full p-4" src="/img/work/IMG_3839.png" alt=""></img>
                 </div>
                 <div class="flex flex-col justify-between md:p-4 leading-normal">
 

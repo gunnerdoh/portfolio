@@ -5,7 +5,7 @@ function Work() {
         <>
             <h2 className="text-3xl mt-5 mb-4 flex flex-row justify-center font-bold">Experience</h2>
             {/* AML */}
-            <a href="#" class="m-4 flex flex-col items-center bg-gray-200 bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row">
+            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row p-8 md:p-0">
                 <div class="flex items-center justify-center bg-white w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">
                     <img class="object-contain max-w-full max-h-full p-4" src="/img/work/aml.png" alt=""></img>
                 </div>
@@ -30,7 +30,7 @@ function Work() {
             </a>
 
             {/* iSchool */}
-            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row">
+            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row px-8 md:p-0">
                 <div class="flex items-center justify-center bg-white w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">
                     <img class="object-contain max-w-full max-h-full p-4" src="/img/work/ischool-logo.png" alt=""></img>
                 </div>
@@ -40,22 +40,20 @@ function Work() {
                     <div>
                         <p className="mb-2">
                         - Provided one-on-one tutoring for undergraduate students in Python and R programming, improving students'
-                        assignment completion rates and technical ability.
+                        academic performance and technical ability.
                         </p>
                         <p className="mb-2">
-                        - Consulted on 15+ student capstone projects, troubleshooting
-                        technical challenges such as debugging, visualization, and integration while providing guidance on best practices
+                        - Consulted on 15+ student capstone projects, troubleshooting technical challenges such as debugging, visualization, and integration while providing guidance on best practices
                         </p>
                         <p className="mb-2">
-                        - Mentored students through complex programming concepts, resulting in improved academic performance and
-                        increased confidence.
+                        - Mentored students through complex programming concepts, resulting in increased confidence.
                         </p>
                     </div>
                 </div>
             </a>
 
             {/* Axiom */}
-            <a href="#" class="m-4 flex flex-col bg-gray-200 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row">
+            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row p-8 md:p-0">
                 <div class="flex items-center justify-center bg-gray-900 w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">
                     <img class="object-contain max-w-full max-h-full p-4" src="/img/work/axiom.png" alt=""></img>
                 </div>
@@ -76,9 +74,9 @@ function Work() {
                 </div>
             </a>
 
-            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row">
+            <a href="#" class="m-4 flex flex-col bg-gray-100 items-center bg-neutral-primary-soft border border-default rounded-base shadow-xs md:flex-row p-8 md:p-0">
                 <div class="flex items-center justify-center bg-blue-400 w-full md:w-64 h-64 rounded-base mb-4 md:mb-0 flex-shrink-0">
-                    <img class="object-contain max-w-full max-h-full p-4" src="/img/work/ImG_3839.jpg" alt=""></img>
+                    <img class="object-contain max-w-full max-h-full p-4" src="/img/work/ImG_3839.png" alt=""></img>
                 </div>
                 <div class="flex flex-col justify-between md:p-4 leading-normal">
 

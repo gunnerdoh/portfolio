@@ -19,8 +19,8 @@ function Frontpage() {
                                 About Me
                             </div>
                             <p className="mt-2 font-primary text-base md:text-2xl text-black text-center md:text-left">
-                                Data expert studying Informatics at the <span className='underline decoration-purple-700'>University of Washington</span>, 
-                                focusing on data science and visualization.
+                                Informatics at the <span className='underline decoration-purple-700'>University of Washington</span>, 
+                                focusing on data science, visualization and programming.
                             </p>
                             <p className="mt-2 font-primary text-base md:text-xl font-light text-black text-center md:text-left">
                                 When I'm not working you can find me playing drums, surfing, or working on a new side project.
@@ -60,7 +60,7 @@ function Frontpage() {
                         </div>
                     </div>
                 </div>
-                < Skills/>
+                {/* < Skills/> */}
             </div>
             <Directory />
         </div>

@@ -17,17 +17,17 @@ const Directory = () => {
                     Projects
                 </button>
                 <button 
-                    className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 ${activeTab === 'Work' ? 'bg-gray-400' : ''}`}
+                    className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r ${activeTab === 'Work' ? 'bg-gray-400' : ''}`}
                     onClick={() => setActiveTab('Work')}
                 >
                     Experience
                 </button>
-                <button 
+                {/* <button 
                     className={`bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r ${activeTab === 'Other' ? 'bg-gray-400' : ''}`}
                     onClick={() => setActiveTab('Other')}
                 >
                     Other / Fun
-                </button>
+                </button> */}
             </div>
             <div>
             {activeTab === 'Projects' && <Projects />}

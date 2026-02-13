@@ -5,11 +5,14 @@ function Other() {
         <div className="px-10 md:px-60">
             <h2 className="text-3xl mt-5 text-center font-bold mb-5">Everything Else</h2>
             <div>
-                <a href="https://medium.com/@gunnerdoh2" target="_blank" rel="noopener noreferrer" className="block pt-6">
+                {/* <a href="https://medium.com/@gunnerdoh2" target="_blank" rel="noopener noreferrer" className="block pt-6">
                     <p className="font-semibold text-xl hover:text-blue-600">📄 Medium (Blog) ➚</p>
                     <p className="mb-6">Coming soon! Technical writings about data and what's on my mind.</p>
                 </a>
-                
+                 */}
+                <a href="https://www.instagram.com/gunnxer/" target="_blank" rel="noopener noreferrer" className="block pt-6">
+                <p className="font-semibold text-xl hover:text-blue-600">📷 Instagram ➚</p>
+                </a>
                 <a href="https://www.youtube.com/watch?v=N7IfWsOfhWY" target="_blank" rel="noopener noreferrer" className="block pt-6">
                     <p className="font-semibold text-xl hover:text-blue-600">🎥 17th Street Concert (Timelapse) ➚</p>
                     <p className="mb-6">Timelapse of me and my band playing a show just outside of UW's campus.</p>

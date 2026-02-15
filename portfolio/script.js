@@ -1,17 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.tab-btn');
-  const tabs = document.querySelectorAll('.tab-content');
+  // Show nav name when sidebar name scrolls out of view
+  const navName = document.querySelector('.nav-name');
+  const sidebarName = document.querySelector('.sidebar .name');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.tab;
-
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      tabs.forEach(tab => {
-        tab.style.display = tab.id === `tab-${target}` ? '' : 'none';
-      });
-    });
-  });
+  if (navName && sidebarName) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          navName.classList.remove('visible');
+        } else {
+          navName.classList.add('visible');
+        }
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sidebarName);
+  }
 });

@@ -4,164 +4,227 @@
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Portfolio page for Gunner Dohrenwend" />
     <link rel="manifest" href="manifest.json" />
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rock+3D&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Gunner Dohrenwend</title>
   </head>
   <body>
-    <div class="layout" id="top">
-      <!-- Left Sidebar -->
-      <aside class="sidebar">
-        <img class="profile-img" src="img/IMG_0234.jpg" alt="Profile" />
-        <h2 class="name">Gunner Dohrenwend</h2>
 
-        <div class="about-section">
-          <span class="section-label-sm">About</span>
-          <p class="bio">
-            Informatics at the <span class="uw-highlight">University of Washington</span>,
-            focusing on data science, visualization and programming.
-          </p>
-          <p class="bio-secondary">
-            When I'm not working you can find me playing drums, surfing, or working on a new side project.
-          </p>
-        </div>
+    <!-- Navigation -->
+    <nav class="nav" id="top">
+      <a href="#top" class="nav-name">Gunner Dohrenwend</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </nav>
 
-        <div class="contact-section">
-          <span class="section-label-sm">Contact</span>
-          <span class="contact-email">gunnerdoh@gmail.com</span>
-        </div>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="img/IMG_0234.jpg" alt="Gunner Dohrenwend" class="hero-photo" />
+      <p class="hero-bio">
+        I'm Gunner, a product developer and engineer studying
+        <a href="https://ischool.uw.edu/programs/informatics" target="_blank" rel="noopener noreferrer" class="info-link">Informatics</a>
+        at the <span class="uw-highlight">University of Washington</span>.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/gunnerdoh" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/gunner-dohrenwend" target="_blank" rel="noopener noreferrer" class="hero-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <button class="hero-link hero-link-copy" aria-label="Copy email" data-copy="gunnerdoh@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span class="hero-link-label">gunnerdoh@gmail.com</span>
+        </button>
+      </div>
+      <a href="#projects" class="scroll-down" aria-label="Scroll to projects">
+        Scroll Down
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
 
-        <div class="social-row">
-          <a href="https://github.com/gunnerdoh" target="_blank" rel="noopener noreferrer" class="social-icon github-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-          </a>
-          <a href="https://linkedin.com/in/gunner-dohrenwend" target="_blank" rel="noopener noreferrer" class="social-icon linkedin-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">My Resume</a>
-        </div>
-      </aside>
+    <!-- Projects -->
+    <section class="page-section" id="projects">
+      <span class="section-label">Projects</span>
+      <ul class="item-list">
+        <li class="item-row">
+          <div class="item-text">
+            <a href="https://github.com/gunnerdoh" target="_blank" rel="noopener noreferrer" class="item-name">MCP Server For Security Operations Analysts</a>
+            <span class="item-subtitle">AI-powered investigation and triage tooling for SOC analysts</span>
+          </div>
+          <span class="item-date">Jan. – June 2026</span>
+        </li>
+        <li class="item-row">
+          <div class="item-text">
+            <span class="item-name">Model for Predicting Art Age</span>
+            <span class="item-subtitle">Computer vision model estimating when an artwork was created</span>
+          </div>
+          <span class="item-date">Feb. 2026</span>
+        </li>
+        <li class="item-row">
+          <div class="item-text">
+            <a href="https://gunnerdoh.github.io/spotify-listening-treemap/" target="_blank" rel="noopener noreferrer" class="item-name">Spotify Listening TreeMap</a>
+            <span class="item-subtitle">A treemap visualization of your Spotify listening history</span>
+          </div>
+          <span class="item-date">Nov. 2025</span>
+        </li>
+        <li class="item-row">
+          <div class="item-text">
+            <a href="https://gunnerdoh.github.io/election-map/" target="_blank" rel="noopener noreferrer" class="item-name">Election Mapping</a>
+            <span class="item-subtitle">County-level 2024 results visualized with purple-shade choropleth mapping</span>
+          </div>
+          <span class="item-date">Dec. 2024</span>
+        </li>
+        <li class="item-row">
+          <div class="item-text">
+            <a href="https://vsrs.ischool.uw.edu/projects/ischool-ethiopia-design-field-study/" target="_blank" rel="noopener noreferrer" class="item-name">Technology Education In Addis Ababa, Ethiopia</a>
+            <span class="item-subtitle">Field research and proposal published on UW's VSRS website</span>
+          </div>
+          <span class="item-date">July – Sep. 2023</span>
+        </li>
+      </ul>
+    </section>
 
-      <!-- Right Main Content -->
-      <main class="main-content">
-        <!-- Projects — horizontal scroll -->
-        <section id="projects">
-          <span class="section-label">Projects</span>
-          <div class="cards">
-            <!-- Spotify -->
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/spotify.jpg" alt="Spotify Treemap" />
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Spotify Treemap</h6>
-                <p class="card-text">A breakdown of your spotify activity.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://gunnerdoh.github.io/spotify-listening-treemap/" target="_blank" class="card-btn">Link to project</a>
-              </div>
-            </div>
-
-            <!-- Ethiopia -->
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/vsrs.png" alt="Ethiopia Field Design Research Study" />
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Ethiopia Field Design Research Study</h6>
-                <p class="card-text">Proposal and ethnographic research from iSchool program in Addis Ababa, Ethiopia.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://vsrs.ischool.uw.edu/projects/ischool-ethiopia-design-field-study/" target="_blank" class="card-btn">Website</a>
-                <a href="Addis_Ababa_iSchool_Writeup.pdf" target="_blank" rel="noopener noreferrer" class="card-btn">Write up</a>
-              </div>
-            </div>
-
-            <!-- Election Mapping -->
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/election.jpg" alt="Election Mapping" />
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Election Mapping</h6>
-                <p class="card-text">Small project breaking election data down by county and using shades of purple.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://gunnerdoh.github.io/election-map/" target="_blank" class="card-btn">Link to project</a>
-              </div>
+    <!-- Work -->
+    <section class="page-section" id="work">
+      <span class="section-label">Work</span>
+      <ul class="work-list">
+        <li class="work-row" data-tags="teaching university programming">
+          <div class="work-left">
+            <span class="work-role">Teaching Assistant, INFO 330</span>
+            <div class="tags">
+              <span class="tag tag-teaching" data-tag="teaching">Teaching</span>
+              <span class="tag tag-university" data-tag="university">University</span>
+              <span class="tag tag-programming" data-tag="programming">Programming</span>
             </div>
           </div>
-        </section>
-
-        <!-- Experience — vertical list, most recent first -->
-        <section id="experience">
-          <span class="section-label">Experience</span>
-
-          <!-- AML — most recent -->
-          <div class="work-card">
-            <div class="work-img-wrapper">
-              <img src="img/work/aml.png" alt="Alaska Marine Lines" />
-            </div>
-            <div class="work-body">
-              <h5 class="work-title">Operations Intern</h5>
-              <p class="work-company">Alaska Marine Lines</p>
-              <span class="work-date">Jun – Sep 2025</span>
-              <p class="work-desc">- Developed and deployed Office Scripts to automate Excel workflows, reducing manual processing time and improving data accuracy</p>
-              <p class="work-desc">- Migrated a legacy customer service database to new software, ensuring data integrity, optimizing schema design, and improving query performance</p>
-              <p class="work-desc">- Performed high-volume document verification and data entry, maintaining precise records and supporting operational reporting</p>
+          <span class="work-company">UW iSchool</span>
+          <span class="work-date">Jan. – Mar. 2026</span>
+        </li>
+        <li class="work-row" data-tags="internship">
+          <div class="work-left">
+            <span class="work-role">G&amp;A, Operations</span>
+            <div class="tags">
+              <span class="tag tag-internship" data-tag="internship">Internship</span>
             </div>
           </div>
-
-          <!-- iSchool -->
-          <div class="work-card">
-            <div class="work-img-wrapper">
-              <img src="img/work/ischool-logo.png" alt="University of Washington" />
-            </div>
-            <div class="work-body">
-              <h5 class="work-title">Informatics Tutor</h5>
-              <p class="work-company">University of Washington</p>
-              <span class="work-date">Mar – Jun 2025</span>
-              <p class="work-desc">- Provided one-on-one tutoring for undergraduate students in Python and R programming, improving students' academic performance and technical ability.</p>
-              <p class="work-desc">- Consulted on 15+ student capstone projects, troubleshooting technical challenges such as debugging, visualization, and integration while providing guidance on best practices</p>
-              <p class="work-desc">- Mentored students through complex programming concepts, resulting in increased confidence.</p>
+          <span class="work-company">Alaska Marine Lines</span>
+          <span class="work-date">June – Sep. 2025</span>
+        </li>
+        <li class="work-row" data-tags="teaching university programming">
+          <div class="work-left">
+            <span class="work-role">Informatics Tutor</span>
+            <div class="tags">
+              <span class="tag tag-teaching" data-tag="teaching">Teaching</span>
+              <span class="tag tag-university" data-tag="university">University</span>
+              <span class="tag tag-programming" data-tag="programming">Programming</span>
             </div>
           </div>
-
-          <!-- Axiom -->
-          <div class="work-card">
-            <div class="work-img-wrapper axiom-bg">
-              <img src="img/work/axiom.png" alt="Axiom Health" />
-            </div>
-            <div class="work-body">
-              <h5 class="work-title">Software Engineering Intern</h5>
-              <p class="work-company">Axiom Health</p>
-              <span class="work-date">Jun – Sep 2024</span>
-              <p class="work-desc">- Analyzed large-scale healthcare datasets using Python, pitching findings in surgery trends and physician patterns that informed executive decision making.</p>
-              <p class="work-desc">- Built automated data collection pipeline to collect 3,000+ records from public sources and API endpoints, improving access to data for machine learning models.</p>
-              <p class="work-desc">- Performed financial analysis of 15+ medtech companies, presenting findings to senior employees.</p>
+          <span class="work-company">UW iSchool</span>
+          <span class="work-date">Mar. – June 2025</span>
+        </li>
+        <li class="work-row" data-tags="teaching programming">
+          <div class="work-left">
+            <span class="work-role">Computer Science Instructor</span>
+            <div class="tags">
+              <span class="tag tag-teaching" data-tag="teaching">Teaching</span>
+              <span class="tag tag-programming" data-tag="programming">Programming</span>
             </div>
           </div>
-
-          <!-- Surf — oldest -->
-          <div class="work-card">
-            <div class="work-img-wrapper surf-bg">
-              <img src="img/work/IMG_3839.png" alt="San Diego Surf School" />
-            </div>
-            <div class="work-body">
-              <h5 class="work-title">Surf Instructor</h5>
-              <p class="work-company">San Diego Surf School</p>
-              <span class="work-date">2018</span>
-              <p class="work-desc">- Led individual and group lessons for beginner surfers.</p>
-              <p class="work-desc">- Achieved a 100% completion rate in student wave-catching.</p>
-              <p class="work-desc">- Effectively mediated and led duck-duck goose games at children's camps, leading to a 90% increase in lunchtime enjoyment.</p>
+          <span class="work-company">Coding For Youth</span>
+          <span class="work-date">Oct. – Dec. 2024</span>
+        </li>
+        <li class="work-row" data-tags="internship programming product">
+          <div class="work-left">
+            <span class="work-role">Software Engineering Intern</span>
+            <div class="tags">
+              <span class="tag tag-internship" data-tag="internship">Internship</span>
+              <span class="tag tag-programming" data-tag="programming">Programming</span>
+              <span class="tag tag-product" data-tag="product">Product</span>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+          <span class="work-company">Axiom Health (acq. Sorcero)</span>
+          <span class="work-date">June – Sep. 2024</span>
+        </li>
+        <li class="work-row work-more-row">
+          <div class="work-left">
+            <span class="work-role">and more...</span>
+          </div>
+        </li>
+      </ul>
+    </section>
 
+    <!-- About Me -->
+    <section class="page-section about-section" id="about">
+      <span class="section-label about-label">About Me</span>
+
+      <!-- Slide 1: Intro + Surfing -->
+      <div class="about-slide">
+        <p>My name is Gunner. I grew up in San Diego, California and currently live and go to school in Seattle, Washington.</p>
+        <p>I am a big fan of surfing. During COVID, when the beach was the only thing open, I started surfing 5–6 days a week. The next summer I got my first job as a surf instructor, where I taught small group lessons on the weekends and led the camp's flagship kids' camp in the day. We would move the boards three blocks from the office to the beach using two rusted pickup trucks. The most boards we ever fit on one truck was 62.</p>
+      </div>
+
+      <!-- Gallery 1: Surf photo -->
+      <div class="about-gallery">
+        <img src="img/work/IMG_3839.png" alt="Surfing" class="about-img-lg" />
+      </div>
+
+      <!-- Slide 2: UW -->
+      <div class="about-slide">
+        <p>I continued to surf, play sports, and learn drums and piano. I chose to go to UW because of its location, academic reputation, and gorgeous campus. I've come to really enjoy Seattle and UW, especially its proximity to both water and snow.</p>
+      </div>
+
+      <!-- Gallery 2: personal photos (between UW and Ethiopia) -->
+      <div class="about-gallery">
+        <img src="https://www.figma.com/api/mcp/asset/d0cae676-44e6-4a24-8c11-57d48e2bbba0" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/d8ffeba5-4b5a-482a-a2b6-583c7f5ec621" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/22a95fa8-9ec1-4a4b-8594-27cff235e440" alt="" />
+      </div>
+
+      <!-- Slide 3: Ethiopia -->
+      <div class="about-slide">
+        <p>After my freshman year at UW, I was accepted into a pilot program led by <a href="http://www.jaimesnyder.com/" target="_blank" rel="noopener noreferrer" class="info-link">Jaime Snyder</a> and <a href="https://www.temiodumosu.com/" target="_blank" rel="noopener noreferrer" class="info-link">Temi Odumosu</a> to study technological interventions in Ethiopia. While there I met students and faculty at Addis Ababa University (AAU), and heard firsthand about challenges and limitations of traditional education in Ethiopia. I interviewed both professors and recent graduates of their Information school, and conducted surveys across employees at local tech and tech-adjacent companies. My final deliverable was a proposal for an online educational program capable of teaching local in-demand skills to those who cannot attend traditional university due to location, familial obligation, or financial reasons. The final proposal was presented to AAU staff and published on UW's Visualization Studies Design Research website.</p>
+      </div>
+
+      <!-- Gallery 3: Ethiopia/project screenshots -->
+      <div class="about-gallery">
+        <img src="https://www.figma.com/api/mcp/asset/0c0c9902-4c30-4489-9ebb-22a8d7c5400d" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/4fc01c94-f821-4e48-8c68-500c296855bb" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/e3393d2f-7dda-4b3d-975a-b3b73dec7698" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/87d00d95-ba10-4bd4-8056-37eea48c6e7d" alt="" />
+      </div>
+
+      <!-- Slide 4: Europe -->
+      <div class="about-slide">
+        <p>During my junior year, four of my friends and I decided to forgo a traditional abroad program and backpack Europe for 3 months (roughly 1 winter quarter). We traveled to 26 countries, visited a lot of churches and museums, and met many new people, some of whom we still keep in touch with.</p>
+      </div>
+
+      <!-- Gallery 4: Europe/project screenshots -->
+      <div class="about-gallery">
+        <img src="https://www.figma.com/api/mcp/asset/e90f788c-5d01-4b20-9559-7fc83efebb66" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/3758404f-b3e1-4fb9-b20d-e3ba4317d0b4" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/7cda21a0-1f9d-4871-a2bd-228fb8591b47" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/60d51971-27c6-48fc-8f98-c74a2622c915" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/1a9ae1b8-ea9b-4e66-8cde-32adf1c3e814" alt="" />
+      </div>
+
+      <!-- Slide 5: Closing -->
+      <div class="about-slide about-slide-closing">
+        <p>I'm currently finishing my degree in Informatics and look forward to the future. If you'd like to reach out, don't hesitate to.</p>
+        <p class="about-sig">Gunner Dohrenwend</p>
+      </div>
+
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>

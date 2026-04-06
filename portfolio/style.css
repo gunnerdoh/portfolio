@@ -71,6 +71,10 @@ img {
   text-decoration: underline;
 }
 
+.nav-link-active {
+  text-decoration: underline;
+}
+
 /* ===== Hero ===== */
 .hero {
   display: flex;
@@ -385,12 +389,11 @@ a.item-name:hover {
 .about-gallery img {
   flex: 0 0 auto;
   width: auto;
-  height: auto;
-  max-height: 220px;
+  height: 220px;
 }
 
 .about-gallery .about-img-lg {
-  max-height: 280px;
+  height: 280px;
 }
 
 /* ===== Scroll offset for sticky nav ===== */
@@ -463,6 +466,6 @@ a.item-name:hover {
   }
 
   .about-gallery img {
-    max-height: 130px;
+    height: 130px;
   }
 }

@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+::selection {
+  background: #000;
+  color: #fff;
+}
+
 :root {
   --coral: #FF715B;
   --coral-light: #ffe6e0;
@@ -149,7 +154,7 @@ img {
 }
 
 .hero-name a:hover {
-  color: #C45B2C;
+  color: #000;
 }
 
 .hero-bullets {
@@ -175,8 +180,21 @@ img {
 .about-link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: #4B0082;
+  text-decoration-color: #4B2E83;
   text-underline-offset: 2px;
+}
+
+.about-link:hover {
+  color: #000;
+}
+
+.uw-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.uw-link:hover {
+  color: #000;
 }
 
 .hero-meta {
@@ -256,7 +274,7 @@ img {
 }
 
 .hero-nav a:hover {
-  background: #3757B2;
+  background: #000;
   color: #fff;
 }
 
@@ -538,6 +556,14 @@ a.item-name:hover {
 
 .work-more-row {
   grid-template-columns: 1fr;
+}
+
+.work-caption {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 0.4rem;
+  line-height: 1.5;
 }
 
 .work-left {

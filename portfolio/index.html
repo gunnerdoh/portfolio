@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rock+3D&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Gunner Dohrenwend</title>
   </head>
@@ -20,10 +20,6 @@
       <div class="hero-inner">
       <div class="hero-left">
         <h1 class="hero-name">Gunner Dohrenwend</h1>
-        <div class="hero-meta">
-          <p>UNIVERSITY OF WASHINGTON INFORMATICS</p>
-          <p>DATA SCIENCE</p>
-        </div>
         <div class="hero-email-row">
           <span class="hero-email">gunnerdoh [at] gmail [dot] com</span>
           <button class="hero-email-copy" aria-label="Copy email" data-copy="gunnerdoh@gmail.com">
@@ -41,7 +37,7 @@
         <nav class="hero-nav">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
-          <a href="/about">About</a>
+          <a href="#about">About</a>
           <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </nav>
       </div>
@@ -56,6 +52,14 @@
     <!-- About -->
     <section class="page-section" id="about">
       <span class="section-label">About</span>
+      <ul class="hero-bullets">
+        <li> Grew up in San Diego, CA</li>
+        <li> Studying Informatics at UW, focusing on data science</li>
+        <li> Spent a month in Addis Ababa finding ways to improve access to education</li>
+        <li> Interested in how data changes the way people make decisions</li>
+        <li> Interested in building cool things</li>
+        <li> Plays drums (and piano, but not as well)</li>
+      </ul>
     </section>
 
     <!-- Projects -->
@@ -135,7 +139,7 @@
               <span class="tag tag-programming" data-tag="programming">Programming</span>
             </div>
           </div>
-          <span class="work-company">UW iSchool</span>
+          <a href="https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer" class="work-company">UW iSchool</a>
           <span class="work-date">Jan. – Mar. 2026</span>
         </li>
         <li class="work-row" data-tags="internship">
@@ -145,7 +149,7 @@
               <span class="tag tag-internship" data-tag="internship">Internship</span>
             </div>
           </div>
-          <span class="work-company">Alaska Marine Lines</span>
+          <a href="https://www.lynden.com/aml/" target="_blank" rel="noopener noreferrer" class="work-company">Alaska Marine Lines</a>
           <span class="work-date">June – Sep. 2025</span>
         </li>
         <li class="work-row" data-tags="teaching university programming">
@@ -157,20 +161,10 @@
               <span class="tag tag-programming" data-tag="programming">Programming</span>
             </div>
           </div>
-          <span class="work-company">UW iSchool</span>
+          <a href="https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer" class="work-company">UW iSchool</a>
           <span class="work-date">Mar. – June 2025</span>
         </li>
-        <li class="work-row" data-tags="teaching programming">
-          <div class="work-left">
-            <span class="work-role">Computer Science Instructor</span>
-            <div class="tags">
-              <span class="tag tag-teaching" data-tag="teaching">Teaching</span>
-              <span class="tag tag-programming" data-tag="programming">Programming</span>
-            </div>
-          </div>
-          <span class="work-company">Coding For Youth</span>
-          <span class="work-date">Oct. – Dec. 2024</span>
-        </li>
+
         <li class="work-row" data-tags="internship programming product">
           <div class="work-left">
             <span class="work-role">Software Engineering Intern</span>
@@ -180,7 +174,7 @@
               <span class="tag tag-product" data-tag="product">Product</span>
             </div>
           </div>
-          <span class="work-company">Axiom Health (acq. Sorcero)</span>
+          <a href="https://www.axiomhealth.com/" target="_blank" rel="noopener noreferrer" class="work-company">Axiom Health (acq. Sorcero)</a>
           <span class="work-date">June – Sep. 2024</span>
         </li>
         <li class="work-row work-more-row">
@@ -190,6 +184,10 @@
         </li>
       </ul>
     </section>
+
+    <footer class="site-footer">
+      <span>Designed and built by Gunner Dohrenwend</span>
+    </footer>
 
     <script src="script.js"></script>
   </body>

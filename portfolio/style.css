@@ -8,8 +8,8 @@
 :root {
   --coral: #FF715B;
   --coral-light: #ffe6e0;
-  --teal: #1EA896;
-  --teal-light: #e2f4ef;
+  --teal: #C45B2C;
+  --teal-light: #f5e0d5;
   --mocha: #523F38;
   --iron: #070707;
   --glauc: #005eff;
@@ -96,18 +96,7 @@ img {
 /* ===== Hero ===== */
 .hero {
   background: #fff;
-  padding: 1.875rem max(2rem, calc((100% - 800px) / 2));
-  position: relative;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.07;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
+  padding: 1.4rem max(2rem, calc((100% - 800px) / 2));
 }
 
 .hero-inner {
@@ -115,7 +104,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(50vh - var(--nav-height));
+  min-height: calc(37.5vh - var(--nav-height));
   max-width: 800px;
   margin: 0 auto;
   gap: 4rem;
@@ -150,6 +139,26 @@ img {
   font-weight: 700;
   color: #000;
   white-space: nowrap;
+}
+
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero-bullets li {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.hero-bullets li::before {
+  content: '— ';
+  color: var(--teal);
 }
 
 .hero-meta {
@@ -249,13 +258,6 @@ img {
 
 .hero-photo-wrapper::before,
 .hero-photo-wrapper::after {
-  content: '';
-  position: absolute;
-  z-index: 0;
-}
-
-.hero-photo-wrapper::before,
-.hero-photo-wrapper::after {
   display: none;
 }
 
@@ -324,19 +326,27 @@ img {
   padding: 2.25rem max(2rem, calc((100% - 800px) / 2));
 }
 
-#about      { background: #F0F2F0; position: relative; }
-
+#about      { background: #F0F2F0; position: relative; max-width: 1000px; margin: 0 auto; padding: 2.25rem 100px; }
 #about::after {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.07;
+  opacity: 0.18;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size: 200px 200px;
 }
 #projects   { background: #fff; }
-#experiments{ background: #F0F2F0; }
+#experiments { background: #F0F2F0; position: relative; max-width: 1000px; margin: 0 auto; padding: 2.25rem 100px; }
+#experiments::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
 #work       { background: #fff; }
 
 .section-label {
@@ -453,7 +463,6 @@ img {
 }
 
 .item-row:last-child {
-  border-bottom: var(--border);
 }
 
 .item-text {
@@ -491,6 +500,9 @@ a.item-name:hover {
 /* ===== Work List ===== */
 .work-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .work-row {
@@ -498,8 +510,13 @@ a.item-name:hover {
   grid-template-columns: 1.5fr 1fr 1fr;
   align-items: start;
   column-gap: 2rem;
-  padding: 1.05rem 0;
+  padding: 1.05rem 1.25rem;
+  color: #fff;
 }
+
+.work-row:nth-child(odd) { background: #3C5943; }
+.work-row:nth-child(even) { background: #628F6D; }
+.work-more-row { background: none !important; color: inherit; }
 
 .work-more-row {
   grid-template-columns: 1fr;
@@ -520,7 +537,9 @@ a.item-name:hover {
 .work-company {
   font-size: clamp(0.9rem, 1.8vw, 1.35rem);
   font-weight: 400;
-  color: #888;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .work-date {
@@ -646,7 +665,7 @@ a.item-name:hover {
 }
 
 /* ===== Scroll offset for sticky nav ===== */
-#projects, #work, #about {
+#projects, #work {
   scroll-margin-top: var(--nav-height);
 }
 
@@ -768,4 +787,12 @@ a.item-name:hover {
   .about-gallery img {
     height: 130px;
   }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 0.75rem max(2rem, calc((100% - 800px) / 2));
+  font-size: 0.8rem;
 }

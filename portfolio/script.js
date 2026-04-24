@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── Copy email to clipboard ──────────────────────────────────────────────
-  document.querySelectorAll('.hero-link-copy').forEach(btn => {
+  document.querySelectorAll('.hero-link-copy, .hero-email-copy').forEach(btn => {
     btn.addEventListener('click', () => {
       navigator.clipboard.writeText(btn.dataset.copy).then(() => {
         const original = btn.getAttribute('aria-label');

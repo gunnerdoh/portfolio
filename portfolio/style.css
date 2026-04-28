@@ -157,6 +157,12 @@ img {
   color: #C45B2C;
 }
 
+.hero-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.15rem 0 0 0;
+}
+
 .hero-bullets {
   list-style: none;
   padding: 0;

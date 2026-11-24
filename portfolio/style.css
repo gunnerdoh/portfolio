@@ -10,19 +10,19 @@ body {
   margin: 0;
 }
 
-.paper-stage {
+/* .paper-stage {
   min-height: 100vh;
   min-height: 100svh;
   display: grid;
   place-items: center;
   padding: 24px;
-}
+} */
 
-.portfolio {
+/* .portfolio {
   position: relative;
   width: min(100%, calc(85vh * 4091 / 5275));
   width: min(100%, calc(85svh * 4091 / 5275));
-}
+} */
 
 .portfolio-image {
   display: block;

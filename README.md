@@ -1,2 +1,2 @@
-## Gunnerdoh.dev
-This is my portfolio page, showing off some projects and other stuff I've done.
+# Gunnerdoh.dev
+Welcome! This is my website.
